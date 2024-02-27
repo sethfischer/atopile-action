@@ -1,0 +1,11 @@
+name: 'atopile-kicad'
+description: 'Extend atopile/atopile-kicad with option to configure atopile working directory.'
+inputs:
+  path:
+    description: 'atopile working directory path'
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}

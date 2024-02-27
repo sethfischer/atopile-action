@@ -1,0 +1,6 @@
+ato-version: ^0.2.0
+builds:
+  default:
+    entry: elec/src/test-project-1.ato:TestProject1
+dependencies:
+- generics

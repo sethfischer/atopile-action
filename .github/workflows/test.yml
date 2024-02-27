@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Build atopile test projects
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+
+      - name: Build project-1
+        id: test-action-project-1
+        uses: ./  # use action in root directory
+        with:
+          path: 'tests/project-1'
