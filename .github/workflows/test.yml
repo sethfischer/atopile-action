@@ -8,6 +8,8 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
 
       - name: Build project-1
         id: test-action-project-1
