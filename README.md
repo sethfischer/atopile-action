@@ -14,7 +14,7 @@ Path to the [atopile](https://atopile.io/) project directory. Default `'.'`.
 ```yaml
 steps:
   - name: Build atopile project
-    uses: sethfischer/atopile-action/atopile-kicad@main
+    uses: sethfischer/atopile-action@main
     with:
       path: 'pcb/'  # atopile project directory
 ```
